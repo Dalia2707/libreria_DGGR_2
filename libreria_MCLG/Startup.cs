@@ -43,7 +43,7 @@ namespace libreria_MCLG
 			services.AddTransient<PublisherService>();
 			services.AddSwaggerGen(c =>
 			{
-				c.SwaggerDoc("v1", new OpenApiInfo { Title = "libreria_MCLG", Version = "v1" });
+				c.SwaggerDoc("v1", new OpenApiInfo { Title = "libreria_DGGR", Version = "v1" });
 			});
 		}
 
@@ -54,7 +54,7 @@ namespace libreria_MCLG
 			{
 				app.UseDeveloperExceptionPage();
 				app.UseSwagger();
-				app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "libreria_MCLG v1"));
+				app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "libreria_DGGR v1"));
 			}
 
 			app.UseHttpsRedirection();
